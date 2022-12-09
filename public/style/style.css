@@ -1,3 +1,22 @@
+html {
+  height: 100%;
+}
+html body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body footer {
+  margin-top: auto;
+}
+html body footer div {
+  background-color: rgb(53, 48, 62);
+  color: white;
+}
+html body footer div a {
+  all: unset;
+}
+
 .navBar {
   height: 11vh;
   background-color: rgb(53, 48, 62);

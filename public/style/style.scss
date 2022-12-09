@@ -1,6 +1,26 @@
+$background_dark: rgb(53, 48, 62);
 
+html{
+    height: 100%;
+    body{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        footer{
+            margin-top: auto;
+            div{
+                background-color: $background_dark;
+                color: white;               
+                a{
+                    all:unset;  
+                }
+            }
+
+        }
+    }
+}
 
 .navBar{
     height: 11vh;
-    background-color: rgb(53, 48, 62);
+    background-color: $background_dark;
 }
