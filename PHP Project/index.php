@@ -66,21 +66,23 @@ mysqli_close($connect);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php require_once 'components/bootstrap.php'?>
-    
-  </head>
+    <title>Login</title>
+    <?php require_once 'components/bootstrap.php' ?>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
 
 <body>
-<div class="container d-flex justify-content-center">
-        <form class="card" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
-            <h2 class="display-5 text-center">Log in to MealPlanner</h2>
+    <div class="form-container">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+            <h3>Login to MealPlanner</h3>
             <hr />
-            
+
             <?php
             if (isset($errMSG)) {
             ?>
@@ -92,18 +94,17 @@ mysqli_close($connect);
             }
             ?>
 
-            <input type="email" autocomplete="off" name="email" class="form-control" placeholder="Email" value="<?php echo $email; ?>" maxlength="40" />
+            <input type="email" autocomplete="off" name="email" class="box" placeholder="Email" value="<?php echo $email; ?>" maxlength="40" />
             <span class="text-danger"><?php echo $emailError; ?></span>
             <br>
-            <input type="password" name="password" class="form-control" placeholder="Password"  maxlength="15" />
+            <input type="password" name="password" class="box" placeholder="Password" maxlength="15" />
             <span class="text-danger"><?php echo $passError; ?></span>
             <hr />
-            <button class="btn btn-md btn-primary btn-sm" type="submit" name="btn-login">Sign In</button>
+            <input class="btn" type="submit" name="btn-login" value="Login Now!">
             <hr />
-            <p class="lead">Already registered?</p>
-            <a class="btn btn-success btn-sm" href="register.php">Sign up</a>
+            <p>You don't have an Account ? <a href="register.php">Register Now!</a></p>
         </form>
     </div>
 </body>
-</html>
 
+</html>
