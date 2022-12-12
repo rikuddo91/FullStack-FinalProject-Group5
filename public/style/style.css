@@ -1,4 +1,30 @@
+:root {
+  --orange: #ff8456;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
 .navBar {
   height: 11vh;
-  background-color: rgb(53, 48, 62);
+  background-color: #2D303C;
+  border-color: #1b1b25;
+}
+.navBar nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+.navBar nav img {
+  height: 120px;
+  margin: auto 0;
+}
+.navBar nav a {
+  margin: auto 0;
+  text-decoration: none;
+  color: var(--orange);
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
