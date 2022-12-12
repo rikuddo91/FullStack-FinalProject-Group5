@@ -1,27 +1,34 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">MealPlanner</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="CRUD/create.php">Create a recipe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="recipemanager.php">My recipes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="mealplan.php">My meal plan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="logout.php?logout">Sign out</a>
-        </li>
-      </ul>
+<header class="header">
+  
+  <div class="header-1">
+    <div class="flex">
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+
+      <!-- For the Backenders: You can Put a Greeting Message in here if you want, I cant get it to work, so maybe you can. --Abdullah -->
+      <!-- <p id="greeting">Welcome <span><?php echo $_SESSION['email']; ?></span></p> -->
+
+      <p>New ? <a href="index.php">Login</a> | <a href="register.php">Register</a></p>
     </div>
   </div>
-</nav>
+  <div class="header-2">
+    <div class="flex">
+      <a href="home.php" class="logo">MealPlanner.</a>
+      <nav class="navbar">
+        <a href="home.php">Home</a>
+        <a aria-current="page" href="CRUD/create.php">Create a Recipe</a>
+        <a aria-current="page" href="recipemanager.php">My Recipes</a>
+        <a aria-current="page" href="mealplan.php">My Meal Plan</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact</a>
+      </nav>
+      <div class="user-box">
+        <a class="delete-btn" href="logout.php?logout">Sign out</a>
+      </div>
+    </div>
+
+</header>

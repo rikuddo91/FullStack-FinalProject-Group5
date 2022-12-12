@@ -103,17 +103,18 @@ mysqli_close($connect);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Registration System</title>
     <?php require_once 'components/bootstrap.php' ?>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Login & Registration System</title>
     
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center">
+    <div class="form-container">
         <form class="card" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off" enctype="multipart/form-data">
 
-            <h2 class="display-4 text-center">Welcome to MealPlanner!</h2>
-            <p class="text-center">Please, sign up to the system</p>
+            <h3>Welcome to MealPlanner!</h3>
+            <h3>Register Now!</h3>
             <hr />
 
             <?php
@@ -127,25 +128,24 @@ mysqli_close($connect);
             }
             ?>
 
-            <input type="text" name="first_name" class="form-control" placeholder="First name" maxlength="50" value="<?php echo $fname ?>" />
+            <input type="text" name="first_name" class="box" placeholder="First Name" maxlength="50" value="<?php echo $fname ?>" />
             <span class="text-danger"> <?php echo $fnameError; ?> </span>
             <br>
-            <input type="text" name="last_name" class="form-control" placeholder="Last name" maxlength="50" value="<?php echo $lname ?>" />
+            <input type="text" name="last_name" class="box" placeholder="Last Name" maxlength="50" value="<?php echo $lname ?>" />
             <span class="text-danger"> <?php echo $fnameError; ?> </span>
             <br>
-            <input type="email" name="email" class="form-control" placeholder="E-mail" maxlength="40" value="<?php echo $email ?>" />
+            <input type="email" name="email" class="box" placeholder="E-Mail" maxlength="40" value="<?php echo $email ?>" />
             <span class="text-danger"> <?php echo $emailError; ?> </span>
             <br>
-            <input type="password" name="password" class="form-control" placeholder="Password" maxlength="15" />
+            <input type="password" name="password" class="box" placeholder="Password" maxlength="15" />
             <span class="text-danger"> <?php echo $passError; ?> </span>
             <br>
-            <input type="text" name="image" class="form-control" placeholder="Link on the image (URL)" maxlength="50" value="<?php echo $picture ?>" />
+            <input type="text" name="image" class="box" placeholder="Link on the image (URL)" maxlength="50" value="<?php echo $picture ?>" />
             <span class="text-danger"> </span>
             <hr />
-            <button type="submit" class="btn btn-primary" name="btn-signup">Sign Up</button>
+            <input type="submit" class="btn" name="btn-signup" value="Register Now!">
             <hr />
-            <p class="lead">Already registered?</p>
-            <a class="btn btn-success" href="index.php">Sign in</a>
+            <p>Already have an Account ? <a href="index.php">Login Now!</a></p>
         </form>
     </div>
 </body>
