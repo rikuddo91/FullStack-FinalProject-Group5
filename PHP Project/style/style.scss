@@ -386,3 +386,45 @@ a {
 }
 
 // ------ CONTACT PAGE STYLING END ------
+
+// ------ ABOUT PAGE STYLING START ------
+
+.about {
+  .flex {
+    margin: 0 20%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .image {
+      flex: 1 1 33rem;
+      margin-bottom: 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      flex: 1 1 33rem;
+      padding: 2rem;
+      background-color: var(--light-bg);
+      margin-left: 1.5rem;
+
+      h3 {
+        font-size: 2.5rem;
+        color: var(--black);
+        text-transform: uppercase;
+      }
+
+      p {
+        padding: 1rem 0;
+        line-height: 2;
+        font-size: 1.5rem;
+        color: var(--light-color);
+      }
+    }
+  }
+}
+
+// ------ ABOUT PAGE STYLING END ------

@@ -325,4 +325,35 @@ a {
   font-size: 1.8rem;
   color: var(--black);
   border-radius: 0.5rem;
+}
+
+.about .flex {
+  margin: 0 20%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .flex .image {
+  flex: 1 1 33rem;
+  margin-bottom: 3rem;
+}
+.about .flex .image img {
+  width: 100%;
+}
+.about .flex .content {
+  flex: 1 1 33rem;
+  padding: 2rem;
+  background-color: var(--light-bg);
+  margin-left: 1.5rem;
+}
+.about .flex .content h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.about .flex .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--light-color);
 }/*# sourceMappingURL=style.css.map */

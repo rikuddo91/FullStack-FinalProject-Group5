@@ -1,4 +1,4 @@
-<div class="main-footer d-flex flex-column justify-content-center align-items-center">
+<div class="main-footer d-flex flex-column justify-content-center align-items-center mt-5">
         <div class="social-headline mb-3">Reach us at</div>
         <div class="social-media d-flex justify-content-around">
           <i class="fa fa-facebook"></i>
