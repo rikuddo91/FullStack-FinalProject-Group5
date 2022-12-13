@@ -1,4 +1,4 @@
-<footer >
+<footer class="mt-5">
   <div class="text-center mt-2 bg-dark text-white d-flex flex-column pt-3">
     <div class="d-flex justify-content-center gap-3 fs-2">
       <a href=""><i class="bi bi-facebook"></i></a>
