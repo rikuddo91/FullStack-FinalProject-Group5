@@ -1,10 +1,13 @@
-<div class="main-footer d-flex flex-column justify-content-center align-items-center mt-5">
-        <div class="social-headline mb-3">Reach us at</div>
-        <div class="social-media d-flex justify-content-around">
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-        </div>
-        <div class="footer-text mt-3">&copy; 2022 by Group-5</div>
-
+<footer >
+  <div class="text-center mt-2 bg-dark text-white d-flex flex-column pt-3">
+    <div class="d-flex justify-content-center gap-3 fs-2">
+      <a href=""><i class="bi bi-facebook"></i></a>
+      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href=""><i class="bi bi-github"></i></a>
+      <a href=""><i class="bi bi-twitter"></i></a>
+      <a href=""><i class="bi bi-youtube"></i></a>          
     </div>
+      <p>&copy;2022 Copyright:</br>
+      Junaid - Abdullah - Magdalena - Ibrahim - Manuel</p>
+  </div>
+</footer>  
