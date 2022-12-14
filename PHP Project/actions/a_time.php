@@ -64,12 +64,13 @@ mysqli_close($connect);
 <head>
     <meta charset="UTF-8">
     <title>Update</title>
+    <link rel="stylesheet" href="../style/style.css">
     <?php require_once '../components/bootstrap.php' ?>
 
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center">
+    <div class="container" id="messages">
         <div class="card shadow" style="width: 45rem" ;>
             <div>
                 <h1>Update status</h1>

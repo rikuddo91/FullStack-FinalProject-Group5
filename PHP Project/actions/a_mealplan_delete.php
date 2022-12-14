@@ -26,12 +26,14 @@ if ($_GET) {
 <head>
     <meta charset="UTF-8">
     <title>Delete recipe</title>
+    <link rel="stylesheet" href="../style/style.css">
     <?php require_once '../components/bootstrap.php' ?>
+    
 
 </head>
 
 <body>
-<div class="container d-flex justify-content-center">
+<div class="container" id="messages">
         <div class="card shadow" style="width: 45rem" ;>
             <div>
                 <h1>Delete recipe from my planner</h1>

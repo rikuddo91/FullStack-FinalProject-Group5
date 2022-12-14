@@ -408,4 +408,12 @@ a {
 
 #meal_row {
   vertical-align: middle;
+}
+
+#messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
 }/*# sourceMappingURL=style.css.map */

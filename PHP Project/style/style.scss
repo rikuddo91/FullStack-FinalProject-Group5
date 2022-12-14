@@ -492,7 +492,21 @@ a {
 // ------ HOME PAGE STYLING END ------
 
 // ------ MEAL PLAN STYLING START ------
+
 #meal_row{
   vertical-align: middle;
 }
+
 // ------ MEAL PLAN STYLING END ------
+
+// ------ A MESSAGES STYLING START ------
+
+#messages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+// ------ A MESSAGES STYLING END ------
