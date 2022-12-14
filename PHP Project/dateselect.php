@@ -17,21 +17,24 @@ $type = $_GET['type'];
 </head>
 
 <body>
-    <fieldset class="card">
-        <legend class='h4'>Your Meal planner</legend>
-        <form action="actions/a_time.php" method="post" enctype="multipart/form-data">
+    <?php require_once 'navbar.php' ?>
+    <fieldset class="card card-width container text-center mt-5">
+        <legend class='h4 pt-2'>Your Meal planner</legend>
+        <form class="d-flex justify-content-center" action="actions/a_time.php" method="post" enctype="multipart/form-data">
             <h2">When would you like to have your meal?</h2>
             <br>
             <h5>Select a date:<br><br>
-                <input class='form-control' type="date" name="date" step="any">
+                <input class='form-control text-center' type="date" name="date" step="any" style="max-width:300px;">
                 <input type="hidden" name="recipe_id" value="<?php echo $id ?>" />
                 <input type="hidden" name="type" value="<?php echo $type ?>" />
             </h5>
-            <a href="home.php"><button class='btn btn-warning mt-3 me-2' type="button">Back</button></a>
-            <button class='btn btn-success' type="submit">Confirm</button>
-
+            <div class="pb-2">
+                <a href="home.php"><button class='btn btn-warning mt-3 me-2' type="button">Back</button></a>
+                <button class='btn btn-success' type="submit">Confirm</button>
+            </div>
         </form>
     </fieldset>
+    <?php require_once 'footer.php' ?>
 </body>
 
 </html>

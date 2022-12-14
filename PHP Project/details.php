@@ -71,6 +71,7 @@ mysqli_close($connect);
     <div class="row">
       <?php echo $body ?>
     </div>
+  </div>
 
   <?php require_once 'footer.php' ?>
 </body>

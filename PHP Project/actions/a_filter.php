@@ -52,7 +52,7 @@ mysqli_close($connect);
 </head>
 
 <body>
-    <?php require_once '../navbar.php' ?>
+    <?php require_once '../navbar1.php' ?>
 
     <div class="container">
 
@@ -66,5 +66,5 @@ mysqli_close($connect);
     </div>
     </div>
 
-    <?php require_once '../footer.php' ?>
+    <?php require_once '../components/footer.php' ?>
 </body>

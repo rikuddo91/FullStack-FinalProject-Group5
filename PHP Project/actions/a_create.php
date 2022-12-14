@@ -69,7 +69,7 @@ if ($_POST) {
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center text-center mt-5">
         <div class="card shadow" style="width: 45rem" ;>
             <div>
                 <h1>Create request response</h1>
