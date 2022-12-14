@@ -5,12 +5,12 @@
 
   <div class="header-2">
     <div class="flex">
-      <a href="dashboard.php" class="logo">MealPlanner.</a>
+      <a href="../dashboard.php" class="logo">MealPlanner.</a>
       <nav class="navbar">
-        <a href="dashboard.php">Home</a>
-        <a aria-current="page" href="CRUD/create.php">Create a Recipe</a>
-        <a aria-current="page" href="recipes.php">Recipes</a>
-        <a class="nav-link" href="adm_crud/create.php">Create a user</a>
+        <a href="../dashboard.php">Home</a>
+        <a aria-current="page" href="../CRUD/create.php">Create a Recipe</a>
+        <a aria-current="page" href="../recipes.php">Recipes</a>
+        <a class="nav-link" href="../adm_crud/create.php">Create a user</a>
       </nav>
       <div class="user-box">
         <a class="delete-btn" href="logout.php?logout">Sign out</a>

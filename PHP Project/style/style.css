@@ -25,7 +25,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 *::-moz-selection {
@@ -69,13 +69,13 @@ a {
 .option-btn:hover,
 .delete-btn:hover,
 .white-btn:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--black) !important;
+  color: var(--white) !important;
 }
 
 .btn,
 .white-btn {
-  background-color: var(--orange);
+  background-color: var(--orange) !important;
 }
 
 .option-btn {
@@ -416,4 +416,91 @@ a {
   align-items: center;
   text-align: center;
   min-height: 50vh;
+}
+
+.adminDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.adminDiv img {
+  width: 15rem;
+}
+
+.userDiv h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.userDiv table img {
+  width: 17rem;
+}
+.userDiv table td {
+  font-size: 2rem;
+}
+
+.detailsContainer {
+  margin: 3rem 0;
+  overflow-y: hidden;
+}
+.detailsContainer h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.detailsContainer #imgDiv {
+  width: auto !important;
+  height: 20rem !important;
+}
+.detailsContainer #imgDiv img {
+  width: 30rem;
+}
+.detailsContainer .row {
+  display: flex !important;
+  justify-content: space-around;
+}
+.detailsContainer #detailsDiv .card-body {
+  padding: 2rem 2rem;
+}
+.detailsContainer #detailsDiv #btnsDiv .col-6 {
+  width: auto !important;
+}
+.detailsContainer #detailsDiv #btnsDiv .col-6 a button {
+  width: 16rem;
+  height: 5rem;
+  padding: 0;
+}
+.detailsContainer #detailsDiv #btnsDiv .col-2 {
+  width: auto !important;
+}
+.detailsContainer #detailsDiv #btnsDiv .col-2 a button {
+  width: 9rem;
+  height: 5rem;
+  padding: 0;
+}
+
+#formContainer {
+  width: 70%;
+  margin: 0 auto;
+}
+#formContainer form {
+  height: 50vh;
+  padding: 1rem;
+}
+#formContainer form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+#formContainer form #formInput {
+  font-size: 1.5rem;
+}
+#formContainer form button {
+  width: 10rem;
+  padding: 0;
+  margin-right: 2rem;
 }/*# sourceMappingURL=style.css.map */

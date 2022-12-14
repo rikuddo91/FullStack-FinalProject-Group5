@@ -26,7 +26,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 *::selection {
@@ -65,13 +65,13 @@ a {
 .option-btn:hover,
 .delete-btn:hover,
 .white-btn:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--black) !important;
+  color: var(--white) !important;
 }
 
 .btn,
 .white-btn {
-  background-color: var(--orange);
+  background-color: var(--orange) !important;
 }
 
 .option-btn {
@@ -510,3 +510,134 @@ a {
 }
 
 // ------ A MESSAGES STYLING END ------
+
+// ------ ADMIN HOME PAGE STYLING START ------
+
+.adminDiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 7rem;
+
+  img{
+    width: 15rem;
+  }
+}
+
+.userDiv{
+
+  h2{
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  table{
+
+    img{
+      width: 17rem;
+    }
+
+    td{
+      font-size: 2rem;
+    }
+  }
+}
+// ------ ADMIN HOME PAGE STYLING END ------
+
+// ------ DETAILS PAGE STYLING START ------
+
+.detailsContainer{
+  margin: 3rem 0;
+  overflow-y: hidden;
+
+  h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  #imgDiv{
+    width: auto !important;
+    height: 20rem !important;
+
+    img{
+      width: 30rem;
+    }
+  }
+
+  .row{
+    display: flex !important;
+    justify-content: space-around;
+  }
+
+  #detailsDiv{
+    
+    .card-body{
+      padding: 2rem 2rem;
+    }
+
+    #btnsDiv{
+      
+      .col-6{
+        width: auto !important;
+        a{
+          
+          button{
+            width: 16rem;
+            height: 5rem;
+            padding: 0;
+          }
+        }
+      }
+
+      .col-2{
+        width: auto !important;
+        a{
+          
+          button{
+            width: 9rem;
+            height: 5rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+// ------ DETAILS PAGE STYLING END ------
+
+// ------ CREATE USER PAGE STYLING START ------
+
+#formContainer{
+  width: 70%;
+  margin: 0 auto;
+
+  form{
+    height: 50vh;
+    padding: 1rem;
+
+    h2{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    #formInput{
+      font-size: 1.5rem;
+    }
+
+    button{
+      width: 10rem;
+      padding: 0;
+      margin-right: 2rem;
+    }
+  }
+}
+
+// ------ CREATE USER PAGE STYLING END ------

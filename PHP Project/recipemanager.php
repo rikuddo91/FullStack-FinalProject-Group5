@@ -68,7 +68,7 @@ mysqli_close($connect);
     <script src="https://use.fontawesome.com/releases/v6.2.0/css/all.css" crossorigin="anonymous"></script>
     <?php require_once 'components/bootstrap.php' ?>
     <link rel="stylesheet" href="./style/style.css">
-    <title>Home</title>
+    <title>My Recipes</title>
 
     
     
@@ -77,7 +77,7 @@ mysqli_close($connect);
 <body>
     <?php require_once 'navbar.php' ?>
     <div>
-        <h1 class="text-center mt-4">Your recipes</h1>
+        <h1 class="text-center mt-4" style="font-size: 4rem; color: black; text-transform: uppercase;">Your recipes</h1>
     </div>
 
     <div class="container">

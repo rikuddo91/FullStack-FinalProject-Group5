@@ -38,7 +38,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             </div>
             <div class='d-flex flex-column align-items-center justify-content-center'>
-            <a href='details.php?id=" . $row['recipe_id'] . "' class='btn' style='width: 11rem; padding: 13px;' type='button'><span class='text-nowrap'>More Info</span></a>
+            <a href='details.php?id=" . $row['recipe_id'] . "' class='option-btn' type='button'><span class='text-nowrap'>More Info</span></a>
             <a href='dateselect.php?id=" . $row['recipe_id'] . "&type=" . $row['type'] . "' class='btn mb-5' style='width: 13rem; padding: 13px;' type='button'><span class='text-nowrap'>Add to plan!</span></a>            
             </div></div>
         </div>";

@@ -25,8 +25,8 @@ if ($result->num_rows > 0) {
             <td><img class='img-thumbnail rounded' src='" . $row['image'] . "' alt=" . $row['first_name'] . "></td>
             <td>" . $row['first_name'] . " " . $row['last_name'] . "</td>
             <td>" . $row['email'] . "</td>
-            <td><a href='adm_crud/update.php?id=" . $row['users_id'] . "'><button class='btn btn-primary btn-sm m-2' type='button'>Edit</button></a>
-             <a href='adm_crud/delete.php?id=" . $row['users_id'] . "'><button class='btn btn-danger btn-sm m-2' type='button'>Delete</button></a></td>
+            <td><a href='adm_crud/update.php?id=" . $row['users_id'] . "'><button class='white-btn m-2' type='button'>Edit</button></a>
+             <a href='adm_crud/delete.php?id=" . $row['users_id'] . "'><button class='delete-btn m-2' type='button'>Delete</button></a></td>
             </tr>";
     }
 } else {
@@ -64,10 +64,10 @@ mysqli_close($connect);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-
-    <?php require_once 'components/bootstrap.php' ?>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./style/style.css">
+    <?php require_once 'components/bootstrap.php' ?>
+    
     
 </head>
 
@@ -79,15 +79,17 @@ mysqli_close($connect);
 
     <div class="container">
         <div class="row">
-            <div>
+            <div class="adminDiv">
                 <img class="rounded" src="<?= $tbody2 ?>" alt="Adm avatar">
 
-                <h4><?= $tbody1 ?></h4>
-                <p class="lead">(Administrator)</p>
+                <div>
+                    <h2><?= $tbody1 ?></h2>
+                    <p class="lead">(Administrator)</p>
+                </div>
 
             </div>
-            <div>
-                <p>User Information</p>
+            <div class="userDiv">
+                <h2>User Information</h2>
                 <table class='table table-striped bg-light'>
                     <thead class='table-secondary'>
                         <tr>

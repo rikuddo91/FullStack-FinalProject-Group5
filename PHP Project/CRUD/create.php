@@ -77,8 +77,8 @@ if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
                         </select></td>
                 </tr>
                 <tr>
-                    <td><button class='btn btn-success' type="submit">Upload</button></td>
-                    <td><a href="../home.php"><button class='btn btn-warning' type="button">Back</button></a></td>
+                    <td><button class='white-btn' type="submit">Upload</button></td>
+                    <td><a href="../home.php"><button class='option-btn' type="button">Back</button></a></td>
                 </tr>
             </table>
         </form>
