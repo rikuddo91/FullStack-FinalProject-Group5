@@ -429,8 +429,61 @@ a {
 
 // ------ ABOUT PAGE STYLING END ------
 
-// ------ Footer ------
+// ------ FOOTER STYLING START ------
 
 #footer_icons{
   color:var(--orange);
 }
+
+// ------ FOOTER STYLING END ------
+
+// ------ HOME PAGE STYLING START ------
+
+.home {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/background3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    text-align: center;
+    width: 50rem;
+
+    .filter{
+      height: 2.5rem;
+      width: 12rem;
+      border: var(--border);
+      border-radius: 8px;
+
+      &:hover{
+        color: var(--orange);
+        transform: scale(1.3);
+      }
+    }
+
+    h3 {
+      font-size: 4rem;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 2rem;
+      color: var(--light-white);
+      padding: 1rem 0;
+      line-height: 2;
+    }
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+}
+
+// ------ HOME PAGE STYLING END ------

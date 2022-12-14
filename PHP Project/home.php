@@ -38,8 +38,8 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             </div>
             <div class='d-flex flex-column align-items-center justify-content-center'>
-            <a href='details.php?id=" . $row['recipe_id'] . "' class='btn btn-success btn-sm cardbtn mt-3 mb-1' type='button'><span class='text-nowrap'>More Info</span></a>
-            <a href='dateselect.php?id=" . $row['recipe_id'] . "&type=" . $row['type'] . "' class='btn btn-primary btn-sm cardbtn mb-2' type='button'><span class='text-nowrap'>Add to plan!</span></a>            
+            <a href='details.php?id=" . $row['recipe_id'] . "' class='btn' style='width: 11rem; padding: 13px;' type='button'><span class='text-nowrap'>More Info</span></a>
+            <a href='dateselect.php?id=" . $row['recipe_id'] . "&type=" . $row['type'] . "' class='btn mb-5' style='width: 13rem; padding: 13px;' type='button'><span class='text-nowrap'>Add to plan!</span></a>            
             </div></div>
         </div>";
     };
@@ -65,14 +65,13 @@ mysqli_close($connect);
 <body>
     <?php require_once 'navbar.php' ?>
 
-    <div class="text-center" style="background-image: url(https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg);
-            background-size: cover;">
-        <h1> MealPlanner menu</h1>
-        <div>
+    <section class="home">
+        <div class="content">
+            <h3> MealPlanner menu</h3>
             <p class="lead">Choose your favourite dishes and organize your day!</p>
             <div class="d-flex justify-content-center">
                 <form method="POST" action="actions/a_filter.php">
-                    <select name="category" class="rounded shadow" style="background-color: #E6E7EB">
+                    <select name="category" class="filter" style="background-color: #E6E7EB">
                         <option value="#">Your personal filter: </option>
                         <option value="breakfast">Breakfast</option>
                         <option value="lunch">Lunch</option>
@@ -83,11 +82,14 @@ mysqli_close($connect);
                         <option value="low-carb">Low-carb</option>
                     </select>
                     <br>
-                    <button class="btn btn-success" name="filter">Look for it!</button>
+                    <button class="btn" name="filter">Look for it!</button>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
+
+    <br>
+
     <div class="container">
         <div class='row'>
             <tbody>
@@ -95,6 +97,21 @@ mysqli_close($connect);
             </tbody>
         </div>
     </div>
+
+    <br>
+
+    <section class="about">
+        <div class="flex">
+            <div class="image">
+                <img src="./images/background4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>About Us!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tempore. Quam voluptas perferendis ipsa voluptatibus, quo repellat vel consequatur fugit ipsam, temporibus cumque non quas amet eum veniam vitae!</p>
+                <a href="about.php" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
     <?php require_once 'footer.php' ?>
 </body>
 
