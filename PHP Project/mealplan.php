@@ -19,12 +19,12 @@ if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $tbody .= "<tr>
                 <td><img class='img-thumbnail' src='" . $row['picture'] . "'</td>
-                <td>" . $row['name'] . "</td>
-                <td>" . $row['calories'] . "</td>
-                <td>" . $row['prep_time'] . "</td>
-                <td>" . $row['diet'] . "</td>
-                <td>" . $row['type'] . "</td>
-                <td>" . $row['date'] . "</td>
+                <td id='meal_row'>" . $row['name'] . "</td>
+                <td id='meal_row'>" . $row['calories'] . "</td>
+                <td id='meal_row'>" . $row['prep_time'] . "</td>
+                <td id='meal_row'>" . $row['diet'] . "</td>
+                <td id='meal_row'>" . $row['type'] . "</td>
+                <td id='meal_row'>" . $row['date'] . "</td>
                 <td><a href='details.php?id=" . $row['fk_recipe_id'] . "'><button class='btn btn-primary' type='button'>Info</button></a>
                 <a href='actions/a_mealplan_delete.php?id=" . $row['fk_recipe_id'] . "'><button class='btn btn-danger'>Delete from plan</button></a></td>
                 </tr>";

@@ -404,4 +404,8 @@ a {
   display: flex;
   justify-content: center;
   margin: 5rem auto;
+}
+
+#meal_row {
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
