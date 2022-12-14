@@ -30,13 +30,16 @@ if ($_GET['id']) {
 <head>
     <title>Edit Recipe</title>
     <?php require_once '../components/bootstrap.php' ?>
+    <link rel="stylesheet" href="../style/style.css">
 
 </head>
 
 <body>
-    <fieldset class="border p-4 bg-light">
-        <h1 class="mb-4">Update recipe </h1>
-        <img class='img-thumbnail rounded' src='<?php echo $picture ?>' alt="<?php echo $name ?>">
+    <?php require_once '../components/navbar.php' ?>
+    <fieldset class="container d-flex flex-column border p-4 bg-light">
+        <h1 class="mb-4 text-center">Update recipe </h1>
+        <div class="d-flex justify-content-center"><img class='img-thumbnail rounded' style="max-width:19rem; justify-content:center;" src='<?php echo $picture ?>' alt="<?php echo $name ?>"> </div>
+        
         <form action="../actions/a_update.php" method="post" enctype="multipart/form-data">
             <hr>
             <table class="table">
@@ -97,6 +100,7 @@ if ($_GET['id']) {
             </table>
         </form>
     </fieldset>
+    <?php require_once '../components/footer.php' ?>
 </body>
 
 </html>
