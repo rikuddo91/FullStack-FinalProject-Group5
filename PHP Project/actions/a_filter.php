@@ -52,7 +52,7 @@ mysqli_close($connect);
 </head>
 
 <body>
-    <?php require_once '../navbar1.php' ?>
+    <?php require_once '../navbar.php' ?>
 
     <div class="container">
 
