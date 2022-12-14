@@ -76,30 +76,10 @@ mysqli_close($connect);
 
 <body>
     <?php require_once 'navbar.php' ?>
-
-    <div class="text-center" style="background-image: url(https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg);
-            background-size: cover;">
-        <h1> MealPlanner menu</h1>
-        <div>
-            <p class="lead">Choose your favourite dishes and organize your day!</p>
-            <div class="d-flex justify-content-center">
-                <form method="POST" action="actions/a_filter.php">
-                    <select name="category" class="rounded shadow" style="background-color: #E6E7EB">
-                        <option value="#">Your personal filter: </option>
-                        <option value="breakfast">Breakfast</option>
-                        <option value="lunch">Lunch</option>
-                        <option value="dinner">Dinner</option>
-                        <option value="regular">Regular</option>
-                        <option value="vegetarian">Vegetarian</option>
-                        <option value="high-protein">High-protein</option>
-                        <option value="low-carb">Low-carb</option>
-                    </select>
-                    <br>
-                    <button class="btn btn-success" name="filter">Look for it!</button>
-                </form>
-            </div>
-        </div>
+    <div>
+        <h1 class="text-center mt-4">Your recipes</h1>
     </div>
+
     <div class="container">
         <div class='row'>
             <tbody>
