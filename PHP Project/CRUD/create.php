@@ -14,6 +14,7 @@ if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <?php require_once '../components/bootstrap.php' ?>
 
 
@@ -22,8 +23,10 @@ if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
 </head>
 
 <body>
-    <fieldset class="card">
-        <legend class='h2'>Add recipe</legend>
+<?php require_once '../components/navbar.php' ?>
+    <fieldset class=" container card mt-5">
+        <legend class='h2 text-center pt-3'>Add your recipe</legend>
+        <hr>
         <form action="../actions/a_create.php" method="post" enctype="multipart/form-data">
             <table class='table'>
                 <tr>
@@ -80,6 +83,7 @@ if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
             </table>
         </form>
     </fieldset>
+    <?php require_once '../components/footer.php' ?>
 </body>
 
 </html>

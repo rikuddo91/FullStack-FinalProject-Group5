@@ -429,8 +429,13 @@ a {
 
 // ------ ABOUT PAGE STYLING END ------
 
-// ------ Footer ------
+// ------ FOOTER PART STYLING START ------
 
 #footer_icons{
   color:var(--orange);
 }
+#footer_icons:hover{
+  scale: 1.5;
+}
+
+// ------ FOOTER PART STYLING END ------

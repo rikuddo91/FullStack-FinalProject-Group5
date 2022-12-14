@@ -360,4 +360,8 @@ a {
 
 #footer_icons {
   color: var(--orange);
+}
+
+#footer_icons:hover {
+  scale: 1.5;
 }/*# sourceMappingURL=style.css.map */
