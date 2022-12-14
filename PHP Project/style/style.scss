@@ -433,6 +433,9 @@ a {
 
 #footer_icons{
   color:var(--orange);
+  &:hover{
+    scale: 1.5;
+  }
 }
 
 // ------ FOOTER STYLING END ------
