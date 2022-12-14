@@ -33,16 +33,16 @@ if ($_GET) {
 </head>
 
 <body>
-<div class="container" id="messages">
-        <div class="card shadow" style="width: 45rem" ;>
-            <div>
-                <h1>Delete recipe from my planner</h1>
+    <div class="mealplanContainer" id="messages">
+            <div class="card shadow" id="messageCard">
+                <div>
+                    <h1>Delete recipe from my planner</h1>
+                </div>
+                <div class="alert alert-<?= $class; ?>" role="alert">
+                    <p><?= $message; ?></p>
+                </div>
+                <a href='../mealplan.php'><button class="white-btn" type='button'>Home</button></a>
             </div>
-        <div class="alert alert-<?= $class; ?>" role="alert">
-            <p><?= $message; ?></p>
-            </div>
-            <a href='../mealplan.php'><button class="btn btn-success border rounded" type='button'>Home</button></a>
-        </div>
     </div>
 </body>
 

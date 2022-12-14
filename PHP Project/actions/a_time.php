@@ -70,8 +70,8 @@ mysqli_close($connect);
 </head>
 
 <body>
-    <div class="container" id="messages">
-        <div class="card shadow" style="width: 45rem" ;>
+    <div class="dateselectMessage" id="messages">
+        <div id="messageCard" class="card shadow">
             <div>
                 <h1>Update status</h1>
             </div>
@@ -80,7 +80,7 @@ mysqli_close($connect);
                 <p><?php echo ($message) ?? ''; ?></p>
                 <p><?php echo ($mealError) ?? ''; ?></p>
             </div>
-            <a href='../recipes.php'><button class="btn btn-success border rounded" type='button'>Home</button></a>
+            <a href='../recipes.php'><button class="white-btn" type='button'>Home</button></a>
         </div>
     </div>
 </body>

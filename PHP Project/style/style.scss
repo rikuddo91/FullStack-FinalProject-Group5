@@ -641,3 +641,73 @@ a {
 }
 
 // ------ CREATE USER PAGE STYLING END ------
+
+// ------ MEAL PLAN DELET PAGE STYLING START ------
+
+.mealplanContainer{
+  margin: 0 auto;
+  
+  #messageCard{
+    padding: 2rem;
+
+    h1{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    p{
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+}
+
+// ------ MEAL PLAN DELET PAGE STYLING END ------
+
+// ------ DATE SELECT PAGE STYLING START ------
+
+#dateselectDiv{
+  padding: 2rem;
+
+  h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  #dateselectForm{
+    
+  }
+}
+
+// ------ DATE SELECT PAGE STYLING END ------
+
+// ------ DATE SELECT MESSAGE STYLING START ------
+
+.dateselectMessage{
+  margin: 0 auto;
+  
+  #messageCard{
+    padding: 2rem;
+
+    h1{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    p{
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+}
+
+// ------ DATE SELECT MESSAGE STYLING END ------

@@ -503,4 +503,50 @@ a {
   width: 10rem;
   padding: 0;
   margin-right: 2rem;
+}
+
+.mealplanContainer {
+  margin: 0 auto;
+}
+.mealplanContainer #messageCard {
+  padding: 2rem;
+}
+.mealplanContainer #messageCard h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.mealplanContainer #messageCard p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#dateselectDiv {
+  padding: 2rem;
+}
+#dateselectDiv h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.dateselectMessage {
+  margin: 0 auto;
+}
+.dateselectMessage #messageCard {
+  padding: 2rem;
+}
+.dateselectMessage #messageCard h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.dateselectMessage #messageCard p {
+  font-size: 1.5rem;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
