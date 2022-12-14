@@ -52,7 +52,7 @@ if ($_POST) {
 </head>
 
 <body>
-    <div class="container " id="messages">
+    <div class="container" id="messages">
         <div class="card shadow" style="width: 45rem" ;>
             <div>
                 <h1>Update status</h1>
