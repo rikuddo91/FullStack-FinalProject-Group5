@@ -17,7 +17,7 @@ $type = $_GET['type'];
 </head>
 
 <body>
-    <?php require_once 'components/navbar.php' ?>
+    <?php require_once 'navbar.php' ?>
     <fieldset class="card card-width container text-center mt-5">
         <legend class='h4 pt-2'>Your Meal planner</legend>
         <form class="d-flex justify-content-center" action="actions/a_time.php" method="post" enctype="multipart/form-data">
@@ -34,7 +34,7 @@ $type = $_GET['type'];
             </div>
         </form>
     </fieldset>
-    <?php require_once 'components/footer.php' ?>
+    <?php require_once 'footer.php' ?>
 </body>
 
 </html>
