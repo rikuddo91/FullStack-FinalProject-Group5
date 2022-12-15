@@ -117,7 +117,7 @@ mysqli_close($connect);
             <?php
             if (isset($errMSG)) {
             ?>
-                <div class="alert alert-<?php echo $errTyp ?>">
+                <div class="text-center alert alert-<?php echo $errTyp ?>">
                     <p><?php echo $errMSG; ?></p>
                 </div>
 
@@ -143,8 +143,8 @@ mysqli_close($connect);
             <span class="text-danger">  </span>     
             <hr />
             <div class="d-flex justify-content-center">
-            <button type="submit" class="btn" name="btn-signup">Insert data</button>
-            <a href="../dashboard.php" class="option-btn">Back to the dashboard</a>
+                <button type="submit" class="btn" name="btn-signup">Insert data</button>
+                <a href="../dashboard.php" class="option-btn">Back to the dashboard</a>
             </div>
         </form>
     </div>

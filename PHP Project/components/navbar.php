@@ -1,5 +1,6 @@
 <header class="header">
   
+  <!--
   <div class="header-1">
     <div class="flex">
       <div class="share">
@@ -8,13 +9,11 @@
         <a href="#" class="fab fa-instagram"></a>
         <a href="#" class="fab fa-linkedin"></a>
       </div>
-
-      <!-- For the Backenders: You can Put a Greeting Message in here if you want, I cant get it to work, so maybe you can. --Abdullah -->
-      <!-- <p id="greeting">Welcome <span><?php echo $_SESSION['email']; ?></span></p> -->
-
+      For the Backenders: You can Put a Greeting Message in here if you want, I cant get it to work, so maybe you can. --Abdullah 
+       <p id="greeting">Welcome <span><?php echo $_SESSION['email']; ?></span></p>
       <p>New ? <a href="index.php">Login</a> | <a href="register.php">Register</a></p>
-    </div>
-  </div>
+    </div> 
+  </div>-->
   <div class="header-2">
     <div class="flex">
       <a href="../home.php" class="logo">MealPlanner.</a>

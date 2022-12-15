@@ -480,7 +480,7 @@ a {
   margin: 0 auto;
 }
 #formContainer form {
-  height: 50vh;
+  height: 50%;
   padding: 1rem;
 }
 #formContainer form h2 {

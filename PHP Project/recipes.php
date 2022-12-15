@@ -19,7 +19,7 @@ $tbody = '';
 
 if ($res->num_rows > 0) {
     while ($row = $res->fetch_array(MYSQLI_ASSOC)) {
-    $tbody .= "<div class='col'>
+    $tbody .= "<div class='col mt-4'>
     <div class='card h-100 shadow justify-content-center'>
     <img src='".$row['picture']."' class='card-img-top' alt='".$row['name']."'>
     <h4 class='card-title text-center mt-3'><i>" . $row['name'] . "</i></h5>
@@ -60,7 +60,7 @@ mysqli_close($connect);
   
 <body>
     <!-- Special navbar for admin with creating recipe function -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">MealPlanner</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,10 +80,11 @@ mysqli_close($connect);
         </ul>
         </div>
     </div>
-    </nav>
+    </nav>-->
+    <?php require_once './adminNavbar.php' ?>
 
     <div class="container">
-        <p class='h2 mt-5 mb-5'>Recipe collection</p>
+        <p class='h2 mt-4 mb-2 text-center'>Recipe collection</p>
             <form method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo $row['recipe_id'] ?>" />
             <input type="hidden" name="picture" value="<?php echo $picture ?>" />
