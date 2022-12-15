@@ -48,31 +48,32 @@ if ($_GET['id']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Recipe</title>
     <?php require_once '../components/bootstrap.php' ?>
+    <link rel="stylesheet" href="../style/style.css">
 
 </head>
 
 <body>
-<div class="container d-flex justify-content-center">
-    <div class="card">
-    <fieldset>
-        <legend class='h2'>Delete request <br><br><img src='<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
-        
-        <p>You have selected the data below:</p>
-        <table class="table">
-            <tr>
-                <td><?php echo $name ?></td>
-            </tr>
-        </table>
-        <br>
-        <h5>Delete this recipe´s info?</h5>
-        <form action="../actions/a_delete.php" method="post">
-            <input type="hidden" name="recipe_id" value="<?php echo $id ?>" />
-            <input type="hidden" name="picture" value="<?php echo $picture ?>" />
-            <button class="btn btn-danger" type="submit">Yes</button>
-            <a href="../dashboard.php"><button class="btn btn-success" type="button">Cancel</button></a>
-        </form>
-    </fieldset>
-    </div>
+    <div class="container" id="messages">
+        <div class="card">
+            <fieldset>
+                <legend class='h2'>Delete request <br><br><img src='<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
+                
+                <p>You have selected the data below:</p>
+                <table class="table">
+                    <tr>
+                        <td><?php echo $name ?></td>
+                    </tr>
+                </table>
+                <br>
+                <h5>Delete this recipe´s info?</h5>
+                <form action="../actions/a_delete.php" method="post">
+                    <input type="hidden" name="recipe_id" value="<?php echo $id ?>" />
+                    <input type="hidden" name="picture" value="<?php echo $picture ?>" />
+                    <button class="btn btn-danger" type="submit">Yes</button>
+                    <a href="../dashboard.php"><button class="btn btn-success" type="button">Cancel</button></a>
+                </form>
+            </fieldset>
+        </div>
     </div>
 </body>
 

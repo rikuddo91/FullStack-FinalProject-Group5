@@ -53,7 +53,7 @@ mysqli_close($connect);
 <body>
 <?php require_once 'navbar.php' ?>
     <div class="container-fluid d-flex flex-column text-center">
-        <h2 class="m-4" style="font-size: 4rem; color: black; text-transform: uppercase;">Your Meal plan</h2>
+        <h2 class="m-4" style="font-size: 4rem; color: black; text-transform: uppercase;">My Meal plan</h2>
         <table class='table table-striped'>
             <thead class='table-secondary text-nowrap'>
                 <tr>

@@ -77,7 +77,7 @@ mysqli_close($connect);
 <body>
     <?php require_once 'navbar.php' ?>
     <div>
-        <h1 class="text-center mt-4" style="font-size: 4rem; color: black; text-transform: uppercase;">Your recipes</h1>
+        <h1 class="text-center mt-4" style="font-size: 4rem; color: black; text-transform: uppercase;">My recipes</h1>
     </div>
 
     <div class="container">
