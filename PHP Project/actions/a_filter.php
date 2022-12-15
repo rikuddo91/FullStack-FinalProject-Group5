@@ -57,7 +57,7 @@ mysqli_close($connect);
     <div class="container">
 
     <div>
-    <div class='row row-cols-xl-4 g-5'>
+    <div class='row row-cols-xl-4 g-5 mt-4'>
             <tbody>
                 <?= $typeOfCourse ?>
             </tbody>

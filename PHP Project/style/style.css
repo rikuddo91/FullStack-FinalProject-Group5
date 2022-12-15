@@ -400,12 +400,6 @@ a {
   line-height: 2;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  margin: 5rem auto;
-}
-
 #meal_row {
   vertical-align: middle;
 }
